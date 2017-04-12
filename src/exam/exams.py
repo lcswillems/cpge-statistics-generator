@@ -3,10 +3,12 @@ from src.helpers import *
 from src.exam.exam_report import *
 
 class Exams:
-	def load(self):
+	def load(self, year = None):
 		self.reports = {}
 
-		for year in old(grids_folder):
+		years = old(grids_folder) if year == None else [str(year)]
+
+		for year in years:
 			self.reports[year] = {}
 
 			for basename in olf(opj(grids_folder, year)):

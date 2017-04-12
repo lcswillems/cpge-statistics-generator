@@ -11,13 +11,13 @@ def opj(*argv):
 
 def old(folder):
 	return list(filter(
-		lambda name: os.path.isdir(os.path.join(folder, name)),
+		lambda name: os.path.isdir(opj(folder, name)),
 		os.listdir(folder)
 	))
 
 def olf(folder):
 	return list(filter(
-		lambda name: os.path.isfile(os.path.join(folder, name)),
+		lambda name: os.path.isfile(opj(folder, name)),
 		os.listdir(folder)
 	))
 

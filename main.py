@@ -60,16 +60,18 @@ def list_students(folder):
 	with open(opj(folder, "index.html"), "w") as file:
 		file.write(html)
 
-Exams().load().save("data/exams")
-
+year = 2016
+exams_folder = "data/exams"
 students_folder = "data/students"
+
+Exams().load(year).save(exams_folder)
 
 for mode in ["offline", "online"]:
 	input_folder = opj(students_folder, "raw")
 	output_folder = opj(students_folder, mode)
 
 	students = Students()\
-	.load(input_folder, mode == "online")\
+	.load(input_folder, year, mode == "online")\
 	.compute_rankings(["Tot. ecrit", "Tot.", "Note"])\
 	.add_ranks("Rang (classe)")
 

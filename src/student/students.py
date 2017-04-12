@@ -7,22 +7,25 @@ def anonymize(name):
 	return hashlib.sha256(str.encode(name)).hexdigest()
 
 class Students:
-	def load(self, folder, anonymize_names = False):
-		subfolders = old(folder)
+	def load(self, folder, year, anonymize_names = False):
+		names = list(filter(
+			lambda name: os.path.isdir(opj(folder, name, str(year))),
+			old(folder)
+		))
 
 		if anonymize_names:
-			anonymized_names = sorted(list(map(anonymize, subfolders)))
+			anonymized_names = sorted(list(map(anonymize, names)))
 			nb_digits = len(str(1 + len(anonymized_names)))
 			ids = {
 				name: "Elève " + '{0:0{width}}'.format(1 + anonymized_names.index(anonymize(name)), width=nb_digits)
-				for name in subfolders
+				for name in names
 			}
 		else:
-			ids = {name: name for name in subfolders}
+			ids = {name: name for name in names}
 
 		self.students = {}
 
-		for name in subfolders:
+		for name in names:
 			if anonymize_names:
 				with open(opj(folder, name, ".id"), "w") as file:
 					file.write(ids[name])
