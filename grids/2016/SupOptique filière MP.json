@@ -1,0 +1,48 @@
+{
+    "ECRIT": {
+        "epreuves": {
+            "Maths 1":          { "coeff": 17 },
+            "Maths 2":          { "coeff": 17 },
+            "Phys-chim 1":      { "coeff": 11 },
+            "Phys-chim 2":      { "coeff": 11 },
+            "Option Info":      { "coeff": 10, "grp": "Opt. Info/SI" },
+            "Option SI":        { "coeff": 10, "grp": "Opt. Info/SI" },
+            "IPT":              { "coeff": 6 },
+            "Anglais":          { "coeff": 11, "grp": "LV1", "cat": "lettre" },
+            "Allemand":         { "coeff": 11, "grp": "LV1" },
+            "Arabe":            { "coeff": 11, "grp": "LV1" },
+            "Espagnol":         { "coeff": 11, "grp": "LV1" },
+            "Redaction":        { "coeff": 17, "cat": "lettre" }
+        },
+        "bonification": {
+            "3/2": 80,
+            "5/2": 0
+        },
+        "barres": {
+            "*": { "points": 990 }
+        }
+    },
+    "ORAL": {
+        "epreuves": {
+            "Maths 1":          { "coeff": 19 },
+            "Maths 2":          { "coeff": 19 },
+            "Phys-chim 1":      { "coeff": 13 },
+            "Phys-chim 2":      { "coeff": 13 },
+            "TP Phys-chim":     { "coeff": 12 },
+            "TIPE":             { "coeff": 11 },
+            "Anglais 1":        { "coeff": 13, "grp": "LV1", "cat": "lettre" },
+            "Arabe 1":          { "coeff": 13, "grp": "LV1" },
+            "Espagnol 1":       { "coeff": 13, "grp": "LV1" },
+            "Allemand 1":       { "coeff": 13, "grp": "LV1" },
+            "Anglais 2":        { "coeff": 10, "spec": "option", "grp": "LV2", "cat": "lettre" },
+            "Allemand 2":       { "coeff": 10, "spec": "option", "grp": "LV2" },
+            "Neerlandais 2":    { "coeff": 10, "spec": "option", "grp": "LV2" },
+            "Espagnol 2":       { "coeff": 10, "spec": "option", "grp": "LV2" }
+        },
+        "bonification": {
+            "3/2": 40,
+            "5/2": 0
+        }
+    },
+    "TOTAL": ["ECRIT", "ORAL"]
+}

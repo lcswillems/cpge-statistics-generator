@@ -1,0 +1,38 @@
+{
+    "ECRIT": {
+        "epreuves": {
+            "Maths 1":          { "coeff": 10 },
+            "Maths 2":          { "coeff": 10 },
+            "Phys-chim 1":      { "coeff": 10 },
+            "Phys-chim 2":      { "coeff": 10 },
+            "Option Info":      { "coeff": 10, "grp": "Opt. Info/SI" },
+            "Option SI":        { "coeff": 10, "grp": "Opt. Info/SI" },
+            "IPT":              { "coeff": 8 },
+            "Anglais":          { "coeff": 10, "grp": "LV1", "cat": "lettre" },
+            "Allemand":         { "coeff": 10, "grp": "LV1" },
+            "Arabe":            { "coeff": 10, "grp": "LV1" },
+            "Espagnol":         { "coeff": 10, "grp": "LV1" },
+            "Redaction":        { "coeff": 10, "cat": "lettre" }
+        },
+        "bonification": {
+            "3/2": 50,
+            "5/2": 0
+        },
+        "barres": {
+            "*": { "points": 549.80 }
+        }
+    },
+    "ORAL": {
+        "epreuves": {
+            "Maths":    { "coeff": 15 },
+            "Physique":         { "coeff": 15 },
+            "TIPE":             { "coeff": 11 },
+            "Anglais":          { "coeff": 13 }
+        },
+        "bonification": {
+            "3/2": 0,
+            "5/2": 0
+        }
+    },
+    "TOTAL": ["ECRIT", "ORAL"]
+}

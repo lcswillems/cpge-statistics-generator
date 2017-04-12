@@ -1,0 +1,47 @@
+{
+    "ECRIT": {
+        "epreuves": {
+            "Maths 1":          { "coeff": 4 },
+            "Maths 2":          { "coeff": 5 },
+            "Physique 1":       { "coeff": 3 },
+            "Physique 2":       { "coeff": 4 },
+            "Chimie":           { "coeff": 2 },
+            "Option Info":      { "coeff": 2, "grp": "Opt. Info/SI" },
+            "Option SI":        { "coeff": 2, "grp": "Opt. Info/SI" },
+            "IPT":              { "coeff": 1 },
+            "Anglais":          { "coeff": 3, "grp": "LV1", "cat": "lettre" },
+            "Allemand":         { "coeff": 3, "grp": "LV1" },
+            "Arabe":            { "coeff": 3, "grp": "LV1" },
+            "Espagnol":         { "coeff": 3, "grp": "LV1" },
+            "Francais":         { "coeff": 5, "cat": "lettre" }
+        },
+        "bonification": {
+            "3/2": 30,
+            "5/2": 0
+        },
+        "barres": {
+            "*":    { "points": 353 },
+            "sc.":  { "points": 180, "epreuves": ["Maths 1", "Maths 2", "Physique 1", "Physique 2"] }
+        }
+    },
+    "ORAL": {
+        "epreuves": {
+            "Maths":            { "coeff": 12 },
+            "Physique":         { "coeff": 10 },
+            "TIPE":             { "coeff": 6 },
+            "Francais":         { "coeff": 6, "cat": "lettre" },
+            "Anglais":          { "coeff": 5, "cat": "lettre" },
+            "Arabe":            { "coeff": 3, "spec": "option", "grp": "LV2", "cat": "lettre" },
+            "Espagnol":         { "coeff": 3, "spec": "option", "grp": "LV2" },
+            "Allemand":         { "coeff": 3, "spec": "option", "grp": "LV2" },
+            "Italien":          { "coeff": 3, "spec": "option", "grp": "LV2" },
+            "Option Info":      { "coeff": 2, "spec": "reprise", "grp": "Opt. Info/SI" },
+            "Option SI":        { "coeff": 2, "spec": "reprise", "grp": "Opt. Info/SI" }
+        },
+        "bonification": {
+            "3/2": 30,
+            "5/2": 0
+        }
+    },
+    "TOTAL": ["ECRIT", "ORAL"]
+}

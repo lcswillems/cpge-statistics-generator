@@ -1,0 +1,39 @@
+{
+    "ECRIT": {
+        "epreuves": {
+            "Info A XULCR":     { "coeff": 4 },
+            "Maths C ULCR":     { "coeff": 4 },
+            "Info-maths ULCR":  { "coeff": 4 }
+        },
+        "bonification": {
+            "3/2": 0,
+            "5/2": 0
+        },
+        "barres": {
+            "*": { "points": 110.40 }
+        }
+    },
+    "ORAL": {
+        "epreuves": {
+            "Francais XULCR":       { "coeff": 2, "spec": "ecrit", "cat": "lettre" },
+            "Allemand XULCR":       { "coeff": 2, "spec": "ecrit", "grp": "LV", "cat": "lettre" },
+            "Anglais XULCR":        { "coeff": 2, "spec": "ecrit", "grp": "LV" },
+            "Arabe XULCR":          { "coeff": 2, "spec": "ecrit", "grp": "LV" },
+            "Espagnol XULCR":       { "coeff": 2, "spec": "ecrit", "grp": "LV" },
+            "Info XLCR":            { "coeff": 4, "spec": "ecrit" },
+            "Maths ULC":            { "coeff": 4 },
+            "Info LCR":             { "coeff": 4 },
+            "TP Algo ULCR":         { "coeff": 4 },
+            "TIPE ULCR":            { "coeff": 2 },
+            "Oral Allemand XULCR":  { "coeff": 1.5, "grp": "LV oral", "cat": "lettre" },
+            "Oral Anglais XULCR":   { "coeff": 1.5, "grp": "LV oral" },
+            "Oral Arabe XULCR":     { "coeff": 1.5, "grp": "LV oral" },
+            "Oral Espagnol XULCR":  { "coeff": 1.5, "grp": "LV oral" }
+        },
+        "bonification": {
+            "3/2": 0,
+            "5/2": 0
+        }
+    },
+    "TOTAL": ["ECRIT", "ORAL"]
+}

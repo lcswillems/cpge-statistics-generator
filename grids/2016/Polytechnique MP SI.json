@@ -1,0 +1,47 @@
+{
+    "ECRIT": {
+        "epreuves": {
+            "Maths A XLCR":     { "coeff": 8 },
+            "Maths B":          { "coeff": 7 },
+            "Physique XULCR":   { "coeff": 6 },
+            "Phys-SI":          { "coeff": 6 },
+            "Francais XULCR":   { "coeff": 6, "cat": "lettre" },
+            "Allemand XULCR":   { "coeff": 6, "grp": "LV", "cat": "lettre" },
+            "Anglais XULCR":    { "coeff": 6, "grp": "LV" },
+            "Arabe XULCR":      { "coeff": 6, "grp": "LV" },
+            "Espagnol XULCR":   { "coeff": 6, "grp": "LV" }
+        },
+        "bonification": {
+            "3/2": 50,
+            "5/2": 30
+        },
+        "barres": {
+            "*": { "points": 472 }
+        }
+    },
+    "ORAL": {
+        "epreuves": {
+            "Maths 1":              { "coeff": 16 },
+            "Maths 2":              { "coeff": 16 },
+            "Physique":             { "coeff": 20 },
+            "Chimie":               { "coeff": 9 },
+            "ADS":                  { "coeff": 15 },
+            "EPS":                  { "coeff": 5 },
+            "Francais":             { "coeff": 8, "cat": "lettre" },
+            "Allemand 1 XULCR":     { "coeff": 8, "grp": "LV1", "cat": "lettre" },
+            "Anglais 1 XULCR":      { "coeff": 8, "grp": "LV1" },
+            "Arabe 1 XULCR":        { "coeff": 8, "grp": "LV1" },
+            "Espagnol 1 XULCR":     { "coeff": 8, "grp": "LV1" },
+            "Info B XLCR":          { "coeff": 4, "spec": "ecrit" },
+            "Allemand 2":           { "coeff": 4, "spec": "option", "grp": "LV2", "cat": "lettre" },
+            "Anglais 2":            { "coeff": 4, "spec": "option", "grp": "LV2" },
+            "Arabe 2":              { "coeff": 4, "spec": "option", "grp": "LV2" },
+            "Espagnol 2":           { "coeff": 4, "spec": "option", "grp": "LV2" }
+        },
+        "bonification": {
+            "3/2": 70,
+            "5/2": 50
+        }
+    },
+    "TOTAL": ["ECRIT", "ORAL"]
+}
