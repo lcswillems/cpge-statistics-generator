@@ -27,8 +27,7 @@ def rank_students(filename, students, school, exam, coeff):
 		file.write(table.to_txt())
 
 def list_students(folder):
-	baseurl = "https://www.lucaswillems.com/upload/articles/87/Students"
-	html = '<meta charset="utf-8">\n<ul>'
+	html = '<meta charset="utf-8">\n\n<ul>'
 
 	for id in old(folder):
 		html += "<li>" + id + "<ul>"
@@ -48,13 +47,13 @@ def list_students(folder):
 			for school, exts in schools_exts.items():
 				html += "<li>" + school + " : "
 				html += ", ".join([
-					'<a href="' + opj(baseurl, id, fpower, school + ext) + '">' + ext[1:] + "</a>"
+					'<a href="' + opj(id, fpower, school + ext) + '">' + ext[1:] + "</a>"
 					for ext in exts
 				])
 				html += "</li>"
 
 			html += "</ul>"
-		html += "</ul></li>"
+		html += "</ul></li>\n"
 	html += "</ul>"
 
 	with open(opj(folder, "index.html"), "w") as file:
