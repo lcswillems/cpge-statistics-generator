@@ -1,8 +1,10 @@
 {
     "ECRIT": {
         "epreuves": {
-            "Info A XULCR":     { "coeff": 6 },
-            "Physique XULCR":   { "coeff": 4 },
+            "Physique XULCR":   { "coeff": 6, "grp": "Info A (MPI) / Physique (MP)" },
+            "Info A XULCR":     { "coeff": 6, "grp": "Info A (MPI) / Physique (MP)" },
+            "Maths C ULCR":     { "coeff": 4, "grp": "Physique (MPI) / Maths C (MP)" },
+            "Physique XULCR":   { "coeff": 4, "grp": "Physique (MPI) / Maths C (MP)" },
             "Maths D ULCR":     { "coeff": 6 }
         },
         "bonification": {
@@ -22,7 +24,8 @@
             "Espagnol XULCR":       { "coeff": 3, "spec": "ecrit", "grp": "LV" },
             "Maths U":              { "coeff": 30 },
             "Maths ULCR":           { "coeff": 15 },
-            "Info U":               { "coeff": 25 },
+            "Physique U":           { "coeff": 25, "grp": "Info U (MPI) / Physique U (MP)" },
+            "Info U":               { "coeff": 25, "grp": "Info U (MPI) / Physique U (MP)" },
             "TIPE ULCR":            { "coeff": 8 },
             "Oral Allemand XULCR":  { "coeff": 3, "grp": "LV oral", "cat": "lettre" },
             "Oral Anglais XULCR":   { "coeff": 3, "grp": "LV oral" },
